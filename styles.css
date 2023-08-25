@@ -1113,7 +1113,7 @@ footer p {
 
 @media (max-width: 768px) {
   .hero {
-    min-height: 630px;
+    min-height: 660px;
     background-color: rgba(0, 0, 0, 0);
   }
 
@@ -1176,7 +1176,7 @@ footer p {
 
 @media (max-width: 767px) {
   .hero {
-    min-height: 497px;
+    min-height: 520px;
   }
 
   .green-section {
@@ -1231,7 +1231,7 @@ footer p {
 
   .non-profit-orgs {
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     gap: 10px;
   }
@@ -1240,6 +1240,7 @@ footer p {
     width: 250px;
     max-width: 50%;
     display: inline-block;
+    margin: auto;
   }
 
   .malala,
@@ -1310,6 +1311,6 @@ footer p {
 
 @media (max-width: 320px) {
   .np-orgs {
-    width: 130px;
+    width: 125px;
   }
 }
