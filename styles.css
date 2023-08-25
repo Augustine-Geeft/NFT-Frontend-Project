@@ -444,7 +444,7 @@ nav ul a li {
   width: 95%;
   margin: 0 auto;
   border-radius: 20px;
-  padding: 3em 4em;
+  padding: 3em 3em;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -463,8 +463,8 @@ nav ul a li {
 }
 
 .LAN h2 {
-  font-family: var(--secondary-font);
-  font-size: var(--fs-6);
+  font-family: far-out;
+  font-size: 40px;
   color: #fff;
   /* -webkit-text-stroke: .3px #000; */
 }
@@ -529,6 +529,7 @@ h2 {
 
 .shade3 {
   color: var(--secondary-color-shade-3);
+  font-size: 40px;
 }
 
 .eth-price {
@@ -569,7 +570,7 @@ h2 {
   width: 500px;
   height: fit-content;
   /* height: 690px; */
-  padding: 3em 3em 0em;
+  padding: 3em 2.5em 0em;
 }
 
 .NYC-award p,
@@ -899,7 +900,7 @@ h2 {
 
 .contact-btn {
   width: 100%;
-  font-size: 1.5rem;
+  font-size: 14px;
   background-color: var(--secondary-color-shade-3);
   color: #000;
   /* text-align: center; */
@@ -1113,10 +1114,41 @@ footer p {
 @media (max-width: 768px) {
   .hero {
     min-height: 630px;
+    background-color: rgba(0, 0, 0, 0);
   }
 
   .space {
     width: 5%;
+  }
+
+  nav {
+    padding: 2em 1em;
+  }
+
+  .nav-logo {
+    width: 170px;
+  }
+
+  .hamburger,
+  .bar {
+    width: 25px;
+  }
+
+  .title-top-text {
+    font-family: far-out;
+    /* padding-top: 2em; */
+  }
+
+  .title-header {
+    line-height: 1;
+  }
+
+  .title-bottom-text {
+    display: none;
+  }
+
+  .fancy {
+    margin-top: 2em;
   }
 
   .sw {
@@ -1128,9 +1160,11 @@ footer p {
     text-align: left;
   }
 
+  /* s-orgs-text */
+
   .s-orgs h2 {
     font-family: far-out;
-    font-size: var(--fs-7);
+    font-size: 32px;
     line-height: 38px;
     margin-bottom: 0.6em;
   }
@@ -1148,6 +1182,7 @@ footer p {
   .green-section {
     flex-direction: column;
     gap: 20px;
+    padding: 3em 2em;
   }
 
   .link {
@@ -1182,6 +1217,7 @@ footer p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 90%;
   }
 
   .NYC-award,
@@ -1189,16 +1225,21 @@ footer p {
     width: 100%;
   }
 
-  .non-profit-orgs {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
+  .np-pgraph h2 {
+    font-size: 35px;
   }
 
-  .np-org {
-    flex-basis: 50%;
+  .non-profit-orgs {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .np-orgs {
+    width: 250px;
+    max-width: 50%;
+    display: inline-block;
   }
 
   .malala,
@@ -1252,5 +1293,23 @@ footer p {
     flex-direction: column;
     padding-block: 4.3em;
     color: #fff;
+  }
+}
+
+@media (max-width: 425px) {
+  .np-orgs {
+    width: 183px;
+  }
+}
+
+@media (max-width: 375px) {
+  .np-orgs {
+    width: 158px;
+  }
+}
+
+@media (max-width: 320px) {
+  .np-orgs {
+    width: 130px;
   }
 }
